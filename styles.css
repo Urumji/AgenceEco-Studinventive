@@ -1,0 +1,539 @@
+html {
+    font-size: calc(15px + 0.390625vw);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* .row{
+    display: flex;
+}
+
+.col-12{
+    width: 100%;
+}
+.col-6{
+    width: 50%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+
+@media screen {
+    col-xs-12{
+        width: 100%;
+    }
+} */
+
+nav, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    position : fixed;
+    background-color: white;
+    width : 100%;
+    z-index: 2;
+}
+
+.nav-block {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-title {
+    color: #015a08;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+.eco {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.nav-item,
+.footer-item {
+    z-index: 3;
+    font-weight:500;
+    font-size: 0.9rem;
+    margin: 0 1rem;
+    color: black;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/*header*/
+header {
+ position: relative;
+}
+.image-header {
+    width : 100%;
+
+}
+
+.title-header {
+    position : absolute;
+    bottom : 0;
+    right : 0;
+    margin : 0 5.5rem 5rem 0;
+    text-align: end;
+    color:white;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+}
+
+.emphase-header {
+    font-size: 3rem;
+}
+
+.emphase-color {
+    color :#D5F31F;
+}
+
+/*team presentation */
+
+.text-center {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    color :#029D5B;
+}
+.team-presentation {
+    padding : 2rem 15%;
+}
+
+.team-fotos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-fotos div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width : 20%;
+    margin : 10% 0;
+    justify-items: stretch;
+}
+
+.team-member-img {
+    border-radius: 50%;
+}
+
+.title-member {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.member-text-presentation {
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+/*number success */
+
+.numbers-success {
+    display: flex;
+    justify-content: space-around;
+    background-color: #053B44;
+    padding : 1rem 15%;
+    text-align: center;
+}
+
+.emphase-number {
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom:0;
+    line-height: 0.5;
+}
+
+.number-presentation {
+    font-size: 1rem;
+    color : white;
+    font-weight: 600;
+}
+
+/*services*/
+
+.services {
+    padding : 1rem 15%;
+    text-align: center;
+}
+
+.services-presentation {
+    display : flex;
+    justify-content: space-between;
+
+}
+
+.services-presentation div {
+    margin : 4rem 5rem;
+
+}
+
+.services-presentation img:hover {
+    background-color: #053B44;
+}
+
+.services-presentation img {
+    padding: 4.5rem;
+    background-color: #f4f6f5;
+    border-radius: 25px;
+    width : 40%;
+}
+
+.services-presentation p {
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/*contact*/ 
+
+.contact {
+    padding : 1rem 15%;
+    text-align: center;
+    background-color: #053B44;
+    color : white;
+}
+
+.inputs {
+    background-color: transparent;
+    border:none;
+    width : 100%;
+    margin-bottom : 0;
+    outline: none;
+    color:white;
+
+}
+
+.hr-input {
+    height :2px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.inputs::placeholder {
+    color:white;
+    font-size: 0.7rem;
+    font-weight: 100;
+    position:absolute;
+    top :0;
+    vertical-align: top;
+}
+
+.form-introduce-self {
+    margin-top : 2rem;
+    margin-bottom: 0;
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap :2rem;
+
+}
+
+.input-width-100 {
+    grid-column: 1/ -1; 
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    
+}
+
+textarea::placeholder {
+   color:white;
+    
+}
+
+.submit-input {
+  width : 7rem;
+  padding : 0.6rem;
+  background-color: #D5F31F;
+  border: none;
+  border-radius: 50px;
+  grid-column: 2/-1;
+  justify-self: flex-end;
+}
+
+/*about us*/
+
+.about-us {
+    display :grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap :1rem;
+    padding : 3rem 15%;
+}
+
+.about-us div {
+    border-radius: 20px;
+}
+.work {
+    width : 100%;
+    height :100%;
+    border-radius: 20px;
+}
+
+.about-us-text {
+    border : 1px solid #053b45;
+    padding :1rem 2rem;
+    text-align: center;
+
+}
+
+.about-us-title {
+    font-weight :900;
+    font-size: 0.9rem;
+}
+
+.about-us-explanation {
+    font-weight :100;
+    font-size: 0.7rem;
+}
+
+.about-us-images {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    padding : 0 0.5rem;
+    gap :1rem;
+
+}
+
+
+.about-us-images div {
+
+    padding: 1rem;
+    display:flex;
+align-items: center;
+    border-radius: 50%;
+    position :relative;
+    height :3rem;
+    border: 5px solid #053b45;
+   justify-content: center;
+
+}
+
+.about-us-images div img {
+
+    width: 70%;
+
+}
+
+.vectors-description {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.vectors-description p {
+    margin-top : 0.5rem;
+    font-weight: 800;
+    color :#053b45;
+    font-size: 0.7rem;
+}
+
+/*our gallery*/
+
+.our-gallery {
+    padding : 1rem 15%;
+    text-align: center;
+}
+
+.our-gallery h3 {
+    margin-bottom: 0;
+}
+
+.our-gallery p {
+    font-weight: 800;
+    line-height: 2;
+}
+
+/*slider*/
+
+.slider {
+    height: 25rem;
+    margin: 0 auto;
+    position: relative;
+  
+    /* IN THE END */
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 25rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* THIS creates the animation! */
+    transition: transform 1s;
+}
+
+.buttons {
+    position :relative;
+    margin-top: 0.5rem;
+
+}
+.slider-btn-right {
+    position:absolute;
+    background-color: transparent;
+    border: none;
+    right : -0.3rem;    cursor: pointer;
+}
+
+.slider-btn-right  svg {
+    width : 1.5rem;
+    height : 1.5rem;
+    background-color: black;
+    border-radius: 50%;    
+}
+
+.slider-btn-right .polyline1{
+    stroke:#D5F31F;
+}
+
+.slider-btn-left {
+    position:absolute;
+    background-color: transparent;
+    border: none;
+    left : -0.3rem;   
+     cursor: pointer;
+     transform: rotate(180deg);
+}
+
+.slider-btn-left  svg {
+    width : 1.5rem;
+    height : 1.5rem;
+    border-radius: 50%;
+    transition: 0.3s;    
+}
+
+.slider-btn-left  .polyline1 {
+    stroke:black;   
+}
+
+
+.slider-btn-left img {
+    width : 1.5rem;
+    border-radius: 50%;
+    transform: rotate(180deg);
+
+}
+
+/*
+.slider-btn-left:hover svg {
+  background-color: black;
+}
+
+.slider-btn-left:hover .polyline1 {
+    stroke:yellow;
+
+}
+*/
+/*contact*/
+
+.contacts {
+    margin-top: 3rem;
+    padding : 1rem 10%;
+    text-align: start;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    background-color: #053B44;
+    font-size: 0.9rem;
+}
+
+.contact-title {
+    font-weight :900;
+    font-size: 0.9rem;
+}
+
+.contact-text {
+    font-weight :100;
+    font-size: 0.7rem;
+}
+
+.icon-contact, .icon-pin {
+    width : 1.2rem;
+}
+
+.call-location {
+    display :grid;
+    grid-template-columns:  auto auto;
+    align-items: center;
+    column-gap :0.5rem;
+    font-size: 0.7rem;
+}
+
+/*footer*/
+
+footer {
+    background-color: #042328;
+    color:white;
+    padding : 2rem 10%;
+    font-size: 0.7rem;
+}
+
+.social-networks {
+    display:flex;
+    gap : 1.1rem;
+
+}
+
+.social-networks div {
+    border: 1px solid white;
+    display:flex;
+    justify-content: center;
+    height :1.2rem;
+    width : 1.2rem;
+    border-radius: 30%;
+    cursor: pointer;
+}
+.social-svg {
+    width : 0.7rem;
+  
+}
+.social-svg-1  {
+    width : 0.9rem;
+}
+
+.social-div {
+    transition : 0.2s;
+}
+
+.social-svg path {
+    fill : #fff;
+}
+
+
+
+.social-div:hover path, .social-div:hover {
+    border :1px solid #D5F31F;
+    transform : scale(1.05);
+    fill: #D5F31F;
+}
+
+
