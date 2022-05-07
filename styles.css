@@ -5,12 +5,41 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    box-sizing: border-box;
 }
 
-/* .row{
+a {
+    text-decoration: none;
+}
+
+.emphase-color {
+    color :#D5F31F;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex{
     display: flex;
 }
 
+
+.grid {
+    display:grid;
+}
+
+.grid-2-col {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-col {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4-col {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 .col-12{
     width: 100%;
 }
@@ -24,33 +53,29 @@ body {
     width: 33.33%;
 }
 
-@media screen {
-    col-xs-12{
-        width: 100%;
-    }
-} */
 
-nav, footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
+/*NAV*/
 nav {
     position : fixed;
+    top:0;
     background-color: white;
     width : 100%;
     z-index: 2;
 }
 
+nav, footer {
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-block {
-    display: flex;
     justify-content: space-between;
     list-style: none;
     align-items: center;
 }
 
-.nav-title {
+.brand {
     color: #015a08;
     font-weight: 900;
     text-decoration: none;
@@ -58,7 +83,7 @@ nav {
     margin-left: 2rem;
 }
 
-.eco {
+.brand-italic {
     font-weight: 900;
     font-style: italic;
 }
@@ -70,27 +95,30 @@ nav {
     font-size: 0.9rem;
     margin: 0 1rem;
     color: black;
+    cursor: pointer;
 }
 
 
-a {
-    text-decoration: none;
+.toggle-button {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.5rem;
+    border-radius: 10px;
 }
 
 /*header*/
 header {
  position: relative;
 }
-.image-header {
-    width : 100%;
-
-}
 
 .title-header {
     position : absolute;
-    bottom : 0;
-    right : 0;
-    margin : 0 5.5rem 5rem 0;
+    bottom : 3%;
+    right : 8%;
     text-align: end;
     color:white;
     font-size: 2.4rem;
@@ -101,17 +129,9 @@ header {
     font-size: 3rem;
 }
 
-.emphase-color {
-    color :#D5F31F;
-}
-
 /*team presentation */
 
-.text-center {
-    text-align: center;
-}
 h3 {
-    text-align: center;
     font-size: 2rem;
     color :#029D5B;
 }
@@ -127,7 +147,6 @@ h3 {
 .team-fotos div {
     display: flex;
     flex-direction: column;
-    text-align: center;
     width : 20%;
     margin : 10% 0;
     justify-items: stretch;
@@ -151,7 +170,6 @@ h3 {
 /*number success */
 
 .numbers-success {
-    display: flex;
     justify-content: space-around;
     background-color: #053B44;
     padding : 1rem 15%;
@@ -179,14 +197,14 @@ h3 {
 }
 
 .services-presentation {
-    display : flex;
     justify-content: space-between;
-
 }
 
 .services-presentation div {
     margin : 4rem 5rem;
-
+    align-items: center;
+    display:flex;
+    flex-direction: column;
 }
 
 .services-presentation img:hover {
@@ -222,7 +240,6 @@ h3 {
     margin-bottom : 0;
     outline: none;
     color:white;
-
 }
 
 .hr-input {
@@ -244,8 +261,6 @@ h3 {
 .form-introduce-self {
     margin-top : 2rem;
     margin-bottom: 0;
-    display : grid;
-    grid-template-columns: 1fr 1fr;
     column-gap :2rem;
 
 }
@@ -278,9 +293,6 @@ textarea::placeholder {
 /*about us*/
 
 .about-us {
-    display :grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
     gap :1rem;
     padding : 3rem 15%;
 }
@@ -288,17 +300,17 @@ textarea::placeholder {
 .about-us div {
     border-radius: 20px;
 }
+
 .work {
     width : 100%;
-    height :100%;
     border-radius: 20px;
+    height: 100%;
 }
 
 .about-us-text {
     border : 1px solid #053b45;
     padding :1rem 2rem;
     text-align: center;
-
 }
 
 .about-us-title {
@@ -308,35 +320,35 @@ textarea::placeholder {
 
 .about-us-explanation {
     font-weight :100;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    margin-bottom: 2rem;
 }
 
 .about-us-images {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
-    padding : 0 0.5rem;
-    gap :1rem;
 
 }
 
 
 .about-us-images div {
-
     padding: 1rem;
     display:flex;
-align-items: center;
+    align-items: center;
     border-radius: 50%;
     position :relative;
-    height :3rem;
-    border: 5px solid #053b45;
+    width : 2rem;
+    height: 2rem;
+    border: 4px solid #053b45;
    justify-content: center;
+   justify-self: center;
 
 }
 
 .about-us-images div img {
 
-    width: 70%;
+    width: 90%;
 
 }
 
@@ -349,7 +361,7 @@ align-items: center;
     margin-top : 0.5rem;
     font-weight: 800;
     color :#053b45;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 /*our gallery*/
@@ -380,7 +392,6 @@ align-items: center;
 }
 .slide {
     position: absolute;
-    top: 0;
     width: 100%;
     height: 25rem;
     border-radius: 15px;
@@ -534,6 +545,142 @@ footer {
     border :1px solid #D5F31F;
     transform : scale(1.05);
     fill: #D5F31F;
+}
+
+
+
+
+@media (max-width:1200px) {
+    html {
+        font-size: calc(13px + 0.390625vw);
+    }
+    
+
+    /*COLLAPSE NAVBAR*/
+
+    .toggle-button {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-block {
+        position: relative;
+        display: grid;
+        width: 100%;
+        visibility: hidden;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-around;
+        margin-left: -1rem;
+        padding-inline-start: 0;
+        max-height: 0rem;
+    }
+
+
+    .nav-block li {
+        margin-top: 2rem;
+        padding-left: 33%;
+    }
+
+    .nav-block.active {
+        max-height: 80rem;
+        transition: max-height 1.5s ease-in-out;
+    }
+
+    .visible {
+        visibility: visible;
+    }
+
+    .brand {
+        position: relative;
+        top: 0.8rem;
+        left : 1rem;
+        font-size: 1.2rem;
+    }
+
+    .about-us, .services, .team-presentation {
+        padding : 3rem 7%;
+    }
+
+    .numbers-success, .contact, .our-gallery, .contacts  {
+        padding : 1rem 7%;
+    }
+
+    footer {
+        padding : 2rem 7%;
+    }
+
+    .emphase-number {
+        font-size: 1.7rem;
+    }
+    
+    .number-presentation {
+        font-size: 0.9rem;
+    }
+    
+
+    .team-fotos div {
+        width : 23%;
+    }
+
+}
+
+
+
+@media (max-width:768px) {
+    html {
+        font-size: calc(12px + 0.390625vw);
+    }
+    
+    .brand {
+        position: relative;
+        top: 0.8rem;
+        left : 1rem;
+        font-size: 1.2rem;
+    }
+
+    .about-us, .services, .team-presentation {
+        padding : 3rem 3%;
+    }
+
+    .numbers-success, .contact, .our-gallery, .contacts  {
+        padding : 1rem 3%;
+    }
+
+    footer {
+        padding : 2rem 3%;
+    }
+
+    .emphase-number {
+        font-size: 1.7rem;
+    }
+    
+    .number-presentation {
+        font-size: 0.9rem;
+    }
+    
+
+    .team-fotos div {
+        width : 23%;
+    }
+
+    .about-us {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .about-us div {
+        width : 50%;
+    }
+
+    .about-us-images div  {
+        width : 1.3rem; 
+        height : 1.3rem;
+    }
+
 }
 
 
