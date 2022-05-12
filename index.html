@@ -8,7 +8,9 @@
     , initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;0,900;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <title>Découvrez Agenceco, une entreprise florissante</title>
 </head>
@@ -16,16 +18,16 @@
 <body>
     <nav class="flex">
         <a class="brand" href="#">Agenc<span class="brand-italic">eco</span></a>
-        <img class="toggle-button" src="images/toggler.svg"> 
+        <img class="toggle-button" src="images/toggler.svg">
         <ul class="nav-block flex toggle-container">
             <div class="nav-item" data-scroll="0">
-            Accueil
+                Accueil
             </div>
             <div class="nav-item" data-scroll="1">
-       Notre équipe
+                Notre équipe
             </div>
             <div class="nav-item" data-scroll="3">
-            Nos services
+                Nos services
             </div>
             <div class="nav-item" data-scroll="2">
                 Témoignage
@@ -71,7 +73,7 @@
                 <p class="member-text-presentation">Consectetur adipisicing elit. Donec sed leo in nisi vehicula
                     bibendum.</p>
             </div>
-            
+
         </div>
 
     </section>
@@ -97,36 +99,43 @@
 
     <section class="section services">
         <h3>Nos services</h3>
-        <div class="services-presentation flex">
+        <div class="services-presentation grid grid-2-col">
             <div><img src="images/Vector.jpg">
                 <p>Création de sites web</p>
             </div>
-            <div><img src="images/Vector.jpg">
-                <p>Audit qualité</p>
+            <div><img class="vector-right-m" src="images/Vector.jpg">
+                <p class="text-left-m">Audit qualité</p>
             </div>
+        </div>
     </section>
 
     <section class="section contact">
         <h3 class="emphase-color">Contactez-nous</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusamus quasi tenetur.</p>
         <form class="form-introduce-self grid grid-2-col">
-            <div><input class="inputs" type="text" placeholder="Nom" autocomplete="off">
+            <div class="input-box"><input class="inputs" data-input="0" type="text" autocomplete="off">
+                <span class="input-label input-0">Nom</span>
                 <hr class="hr-input">
             </div>
-            <div><input class="inputs" type="text" placeholder="Catégorie" autocomplete="off">
+            <div class="input-box"><input class="inputs" data-input="1" type="text" autocomplete="off">
+                <span class="input-label input-1">Catégorie</span>
+                <hr class="hr-input">
+            </div class="input-box">
+            <div class="input-box"><input class="inputs" data-input="2" type="text" autocomplete="off">
+                <span class="input-label input-2">Téléphone</span>
                 <hr class="hr-input">
             </div>
-            <div><input class="inputs" type="text" placeholder="Téléphone" autocomplete="off">
+            <div class="input-box"><input class="inputs" data-input="3" type="text" autocomplete="off">
+                <span class="input-label input-3">Ville</span>
                 <hr class="hr-input">
             </div>
-            <div><input class="inputs" type="text" placeholder="Ville" autocomplete="off">
+            <div class="input-width-100 input-box"><input class="inputs" data-input="4" type="text" autocomplete="off">
+                <span class="input-label input-4">Email</span>
                 <hr class="hr-input">
             </div>
-            <div class="input-width-100"><input class="inputs" type="text" placeholder="Email" autocomplete="off">
-                <hr class="hr-input">
-            </div>
-            <div class="input-width-100"><textarea class="inputs input-message" type="text" placeholder="Message"
+            <div class="input-width-100 input-box"><textarea class="inputs input-message" data-input="5" type="text"
                     autocomplete="off" rows="10"></textarea>
+                <span class="input-label input-5">Message</span>
                 <hr class="hr-input">
             </div>
             <input class="submit-input" type="submit" name="envoyer">
@@ -134,7 +143,9 @@
     </section>
 
     <section class="about-us grid grid-2-col">
-        <div> <img class="work" src="images/jason-goodman-Oalh2MojUuk-unsplash 1.jpg" alt="our-work"></div>
+        <div> <img class="work hidden-768" src="images/jason-goodman-Oalh2MojUuk-unsplash 1.jpg" alt="our-work">
+            <img class="work show-768" src="images/jason-goodman-Oalh-768-px.jpg" alt="our-work">
+        </div>
         <div class="about-us-text">
             <p class="about-us-title">À propos de nous</p>
             <p class="about-us-explanation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aut.<br>
@@ -180,7 +191,7 @@
                     <path class="rect1" style="fill:none" d="M 0,0 H 256 V 256 H 0 Z" />
                     <path class="circle1" style="fill:none;stroke:#000000;stroke-width:8.59672;stroke-miterlimit:10"
                         d="M 252.46149,127.55389 A 123.56989,124.01561 0 0 1 128.8916,251.5695 123.56989,124.01561 0 0 1 5.3217087,127.55389 123.56989,124.01561 0 0 1 128.8916,3.5382767 123.56989,124.01561 0 0 1 252.46149,127.55389 Z" />
-                    <path class="polyline1"
+                    <path class="polyline1-right"
                         style="fill:none;stroke-width:6.66667;stroke-linecap:round;stroke-linejoin:round"
                         d="m 116,92 40,36 -40,36" />
                 </svg>
@@ -201,7 +212,7 @@
                     <path class="rect1" style="fill:none" d="M 0,0 H 256 V 256 H 0 Z" />
                     <path class="circle1" style="fill:none;stroke:#000000;stroke-width:8.59672;stroke-miterlimit:10"
                         d="M 252.46149,127.55389 A 123.56989,124.01561 0 0 1 128.8916,251.5695 123.56989,124.01561 0 0 1 5.3217087,127.55389 123.56989,124.01561 0 0 1 128.8916,3.5382767 123.56989,124.01561 0 0 1 252.46149,127.55389 Z" />
-                    <path class="polyline1"
+                    <path class="polyline1-left"
                         style="fill:none;stroke-width:6.66667;stroke-linecap:round;stroke-linejoin:round"
                         d="m 116,92 40,36 -40,36" />
                 </svg>
